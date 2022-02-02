@@ -1,0 +1,51 @@
+// Данный  файл предназначен для кастомизации ant design-на и глобальных изменение стилей.
+// https://ant.design/docs/react/customize-theme
+@import "~antd/dist/antd.less";
+
+// custom less variables
+@secondary-color: #39454c; // secondary color
+
+// antd default less variables
+@layout-sider-background: @secondary-color; // layout slider dark theme
+
+// menu dark theme
+@menu-dark-bg: @secondary-color;
+@menu-dark-item-active-bg: rgba(255, 145, 35, 0.1);
+
+@heading-color: @secondary-color; // heading text color
+@text-color: @secondary-color; // major text color
+@border-radius-base: 8px; // major border radius
+@btn-primary-bg: @secondary-color; // btn bg
+
+// font-family
+@font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// ---------- antd customize global styles ----------
+
+// space
+.ant-space {
+  display: flex;
+}
+
+// layout
+.ant-layout {
+  min-height: 100vh;
+}
+
+// modal
+.ant-modal {
+  width: 360px !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
