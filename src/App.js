@@ -1,12 +1,11 @@
 import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
-import { accessTokenParser } from "./utils";
-import { roles } from "./utils";
+import { accessTokenParser, roles } from "./utils";
 
-import { Layout } from "./containers/_Layout";
+import { Home } from "./containers/Home";
 import { Login } from "./containers/Login";
 import { NotFound } from "./containers/NotFound";
-import { Home } from "./containers/Home";
+import { Layout } from "./containers/_Layout";
 
 // ACCESS CONTROLLER
 function PrivateRoute({ onlyFor, ...routeOptions }) {
@@ -23,6 +22,7 @@ function PrivateRoute({ onlyFor, ...routeOptions }) {
 
 function App() {
   const { ALL_ROLES } = roles;
+
   // RENDER
   return (
     <Switch>
